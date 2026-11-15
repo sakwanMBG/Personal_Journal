@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+@layer base {
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+    overscroll-behavior-y: auto;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Standar scrollbar bernuansa Personal Journal (krem & cokelat hangat) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #725a44 #f9f3e9;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f9f3e9;
+}
+::-webkit-scrollbar-thumb {
+  background: #725a44;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #32261d;
+}
+
+/* Scroll margin offset untuk seluruh section ber-id */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-highest":"#e8e2d8","on-primary":"#ffffff","on-error":"#ffffff","surface-container-high":"#ede7de","on-secondary-fixed":"#291807","outline-variant":"#d1c4bc","secondary":"#725a44","surface":"#fff9ee","tertiary-container":"#3f402d","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","inverse-primary":"#d6c3b5","inverse-on-surface":"#f6f0e6","surface-container":"#f3ede3","on-tertiary-fixed-variant":"#474835","secondary-fixed":"#feddc1","on-secondary-fixed-variant":"#58422e","surface-dim":"#dfd9d0","primary-container":"#493c32","outline":"#7f756e","on-background":"#1d1b16","tertiary-fixed-dim":"#c8c8af","secondary-fixed-dim":"#e0c1a6","on-secondary":"#ffffff","secondary-container":"#fbdabe","on-tertiary-fixed":"#1c1d0c","primary-fixed-dim":"#d6c3b5","surface-container-low":"#f9f3e9","primary-fixed":"#f3dfd0","surface-variant":"#e8e2d8","on-error-container":"#93000a","background":"#fff9ee","on-primary-fixed-variant":"#52443a","on-primary-container":"#b9a699","on-secondary-container":"#765e48","on-surface":"#1d1b16","surface-tint":"#6a5c50","primary":"#32261d","error-container":"#ffdad6","on-tertiary-container":"#acac93","on-primary-fixed":"#241911","tertiary-fixed":"#e5e4ca","tertiary":"#292a19","inverse-surface":"#33302a","error":"#ba1a1a","surface-bright":"#fff9ee","on-surface-variant":"#4e453f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xl":"2.5rem","gutter":"1.5rem","space-lg":"1.5rem","margin":"2.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem","gutter-sm":"1rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"display":["Newsreader"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-mobile":["Newsreader"],"headline-md":["Newsreader"],"journal-stamp":["Plus Jakarta Sans"],"journal-note":["Newsreader"],"headline-lg-mobile":["Newsreader"],"headline-sm":["Newsreader"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Newsreader"],"title-md":["Newsreader"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["17px",{"lineHeight":"28px","fontWeight":"400"}],"display-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"journal-stamp":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"journal-note":["15px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(73,60,50,0.06)] border-b border-outline-variant/30">
+<div class="h-20 max-w-[1200px] mx-auto px-4 sm:px-gutter-sm lg:px-margin flex items-center justify-between gap-2 sm:gap-space-md relative">
+<!-- Brand Sisi Kiri (Desktop & Mobile) -->
+<a href="#beranda" aria-label="Ruang Cerita Beranda" class="flex items-center gap-2 sm:gap-space-sm group shrink-0">
+<div class="w-9 h-9 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-[0_2px_6px_rgba(73,60,50,0.08)] transform -rotate-2 group-hover:rotate-0 transition-transform">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none group-hover:text-secondary transition-colors font-medium">Ruang Cerita</span>
+<span class="font-journal-note text-journal-note italic text-secondary leading-tight mt-0.5 hidden sm:inline">jurnal &amp; portofolio personal</span>
+</div>
+</a>
+<!-- Desktop Nav (lg:flex, proporsional dari tablet-landscape/laptop 1024px sampai desktop 1920px) -->
+<nav class="hidden lg:flex items-center gap-0.5 xl:gap-1.5" id="journal-desktop-nav" aria-label="Navigasi Utama">
+<a href="#beranda" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all bg-secondary-container text-on-secondary-container font-semibold rounded-lg shadow-xs font-label-md xl:font-label-lg whitespace-nowrap" aria-current="page">Beranda</a>
+<a href="#tentang" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all text-on-surface-variant font-label-md xl:font-label-lg hover:bg-surface-container hover:text-on-surface rounded-lg whitespace-nowrap">Tentang Saya</a>
+<a href="#perjalanan" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all text-on-surface-variant font-label-md xl:font-label-lg hover:bg-surface-container hover:text-on-surface rounded-lg whitespace-nowrap">Perjalanan</a>
+<a href="#portfolio" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all text-on-surface-variant font-label-md xl:font-label-lg hover:bg-surface-container hover:text-on-surface rounded-lg whitespace-nowrap">Portfolio</a>
+<a href="#tulisan" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all text-on-surface-variant font-label-md xl:font-label-lg hover:bg-surface-container hover:text-on-surface rounded-lg whitespace-nowrap">Tulisan</a>
+<a href="#galeri" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all text-on-surface-variant font-label-md xl:font-label-lg hover:bg-surface-container hover:text-on-surface rounded-lg whitespace-nowrap">Galeri</a>
+<a href="#kontak" class="nav-journal-link px-2.5 xl:px-3 py-1.5 transition-all text-on-surface-variant font-label-md xl:font-label-lg hover:bg-surface-container hover:text-on-surface rounded-lg whitespace-nowrap">Kontak</a>
+</nav>
+<!-- Tombol Kirim Pesan Desktop (lg:flex) -->
+<div class="hidden lg:flex items-center gap-space-sm shrink-0">
+<a href="#kontak" class="inline-flex items-center gap-1.5 px-3.5 xl:px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md xl:font-label-lg shadow-[0_2px_8px_rgba(73,60,50,0.12)] hover:bg-secondary hover:-translate-y-0.5 transition-all">
+<span>Kirim Pesan</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+<!-- Tombol Hamburger Mobile & Tablet (lg:hidden) -->
+<div class="flex lg:hidden items-center gap-2">
+<a href="#kontak" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm shadow-xs hover:bg-secondary transition-all">
+<span>Pesan</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<button id="journal-mobile-menu-btn" type="button" aria-label="Menu Navigasi Jurnal" aria-expanded="false" aria-controls="journal-mobile-menu" class="w-10 h-10 rounded-xl bg-surface-container-high text-primary border border-outline-variant/40 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container active:scale-95 transition-all focus:outline-none shadow-xs">
+<span class="material-symbols-outlined text-[24px] select-none pointer-events-none">menu</span>
+</button>
+</div>
+<!-- Dropdown Menu Mobile & Tablet (Scrapbook Journal Style) -->
+<div id="journal-mobile-menu" class="hidden lg:hidden absolute top-[calc(100%+0.5rem)] right-3 sm:right-6 w-72 max-w-[calc(100vw-1.5rem)] bg-[#fff9ee] rounded-2xl shadow-[0_12px_40px_rgba(73,60,50,0.18)] border border-outline-variant/60 p-4 z-50 transition-all max-h-[calc(100vh-6rem)] overflow-y-auto" style="background-color: #fff9ee !important;">
+<!-- Header Menu Mobile: Label & Indikator Scrapbook -->
+<div class="flex items-center justify-between pb-2.5 mb-2 border-b border-outline-variant/40">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase tracking-widest font-bold">Daftar Isi Jurnal</span>
+</div>
+<span class="font-journal-note text-journal-note italic text-secondary text-xs">Arsip #2024</span>
+</div>
+<!-- Menu Items Vertikal Mobile -->
+<nav class="flex flex-col gap-1 py-1" aria-label="Navigasi Menu Mobile">
+<a href="#beranda" data-path="beranda" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-secondary-container text-on-secondary-container font-semibold shadow-xs font-label-lg text-label-lg transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-container link-icon">auto_stories</span>
+<span>Beranda</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-100 link-active-arrow">chevron_right</span>
+</a>
+<a href="#tentang" data-path="tentang" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary link-icon">person</span>
+<span>Tentang Saya</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-0 link-active-arrow">chevron_right</span>
+</a>
+<a href="#perjalanan" data-path="perjalanan" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary link-icon">timeline</span>
+<span>Perjalanan</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-0 link-active-arrow">chevron_right</span>
+</a>
+<a href="#portfolio" data-path="portfolio" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary link-icon">collections_bookmark</span>
+<span>Portfolio</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-0 link-active-arrow">chevron_right</span>
+</a>
+<a href="#tulisan" data-path="tulisan" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary link-icon">edit_note</span>
+<span>Tulisan</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-0 link-active-arrow">chevron_right</span>
+</a>
+<a href="#galeri" data-path="galeri" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary link-icon">photo_library</span>
+<span>Galeri</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-0 link-active-arrow">chevron_right</span>
+</a>
+<a href="#kontak" data-path="kontak" class="mobile-journal-link flex items-center justify-between px-3.5 py-2.5 rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-all">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary link-icon">mail</span>
+<span>Kontak</span>
+</span>
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-0 link-active-arrow">chevron_right</span>
+</a>
+</nav>
+<!-- Garis Pemisah & Tombol Kirim Pesan Mobile -->
+<div class="my-2.5 border-t border-outline-variant/30"></div>
+<a href="#kontak" class="mobile-journal-cta w-full py-2.5 px-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-md hover:bg-secondary active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span>Kirim Pesan ke Jurnal</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/40 to-transparent"></div>
+</header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION: Halaman Pembuka Jurnal -->
+<section class="relative w-full overflow-hidden py-16 lg:py-24 bg-surface scroll-mt-24" id="beranda">
+<!-- Atmospheric decorative blurred paper glow -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-secondary-container/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left: Editorial Narrative & Greeting -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 bg-surface-container rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase tracking-widest">Lembar Pembuka • Jurnal Personal</span>
+</div>
+<div class="flex flex-col gap-3">
+<h1 class="font-display text-display-mobile sm:text-4xl lg:text-display text-primary leading-tight">
+              Halo, Selamat Datang di <span class="italic font-normal text-secondary">Ruang Cerita Saya.</span>
+</h1>
+<p class="font-title-md text-title-md text-secondary mt-1">
+              Saya <span class="text-primary font-bold">[Nama Lengkap]</span> — <span class="italic">[Profesi atau Status / Visual Storyteller &amp; Designer]</span>
+</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Sebuah catatan terbuka tentang eksplorasi visual, rekayasa ide, rasa ingin tahu, dan perjalanan bertumbuh setiap harinya. Dirajut helai demi helai di sela tegukan kopi hangat dan coretan sketsa kertas.
+          </p>
+<!-- Action Buttons & Stamp Metadata -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-secondary hover:-translate-y-0.5 transition-all" href="#tentang">
+<span>Kenali Saya</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-highest transition-all" href="#portfolio">
+<span>Lihat Perjalanan &amp; Karya</span>
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</a>
+</div>
+<!-- Handwritten Micro Marginalia Note -->
+<div class="flex items-center gap-3 pt-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span>
+<p class="font-journal-note text-journal-note italic text-secondary">
+              "Menyimpan setiap detik berharga sebelum memudar menjadi sekadar ingatan."
+            </p>
+</div>
+</div>
+<!-- Right: Layered Physical Scrapbook Collage -->
+<div class="lg:col-span-5 relative flex justify-center items-center py-6">
+<!-- Background Polaroid (Secondary Accent) -->
+<div class="absolute -top-4 -right-2 sm:right-6 w-56 sm:w-64 bg-surface-container-lowest p-3.5 pb-10 rounded-lg shadow-md transform rotate-6 hover:rotate-0 transition-transform duration-300 z-10">
+<!-- Simulated Washi Tape -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-secondary-fixed/80 backdrop-blur-xs rounded-sm shadow-xs -rotate-2"></div>
+<div class="w-full aspect-[4/3] rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A warm, atmospheric film photo of an artisanal ceramic coffee cup sitting on an open linen journal notebook, with wooden pens, soft morning sunlight casting long gentle shadows in cream and earthy brown hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5e927gvSmUGYDEArTgUc7lfEQAwwhB9Jtq1JUoh4evilhAZOt6UN9qgatPRPLKrKybPqsyTIdPlAMKrF76zzIKhR9zNhuuLA7RUJWXzyqKAqDN5lshnbTzTEbzzexdoIFLNkHRg6NeqwjYlJH8dP2bsySmu4FKCu4fbV_jJGLScnPkNzumSNZNRgFdnCwEmYRvrfBgfKANG8Tbn3WxZhRqqg6zipxzbkNCZiQ0eg"/>
+</div>
+<div class="mt-3 flex flex-col">
+<span class="font-journal-note text-journal-note italic text-primary leading-tight">Momen Kopi &amp; Sketsa</span>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase tracking-widest mt-0.5">Sudut Meja • 08:30 WIB</span>
+</div>
+</div>
+<!-- Main Portrait Polaroid (Front) -->
+<div class="relative w-64 sm:w-72 bg-surface-container-lowest p-3.5 pb-12 rounded-lg shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-300 z-20">
+<!-- Simulated Washi Tape with torn edge vibe -->
+<div class="absolute -top-3 left-8 w-20 h-6 bg-surface-container-highest/90 backdrop-blur-xs rounded-sm shadow-xs rotate-3"></div>
+<div class="w-full aspect-[4/5] rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A candid, artistic portrait photo of a young creative professional smiling softly in an organic linen studio, warm ambient window light, natural grain texture, film aesthetic with soft sepia and amber undertones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfGXDSXtqTrp6t-dvCsIXWPuOCS3rSyGj1DvbIczPXb38ohD88wF4lxIPgL7SYoncB7YMIyTiqPfhGwqxPIQB4GhBLrxzmalowWwUtGBI2xmWvs_02W8aRZCrohXfqTz-RMyVhMx-sSDDM9ePe19k0IDqNzyAkIMuW7v1LqqLTYeZ0Uaf_zEFsx4QSknnC3G_6RvZDV3DERp-2HpNYRULaz9K97pJUAcaUiKXU2f4"/>
+</div>
+<!-- Polaroid Chin / Handwritten details -->
+<div class="mt-4 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-journal-note text-journal-note italic text-primary font-medium">[Nama Lengkap]</span>
+<span class="font-journal-stamp text-journal-stamp text-secondary bg-surface-container px-2 py-0.5 rounded">ARSIP #01</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">pin_drop</span>
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-wider">Edisi 2024 / Jakarta, ID</span>
+</div>
+</div>
+</div>
+<!-- Brass Pushpin Accent Marker -->
+<div class="absolute -bottom-2 left-6 z-30 flex items-center gap-2 bg-surface-container-high px-3.5 py-1.5 rounded-full shadow-md transform rotate-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-inner"></span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-on-surface-variant">Tersusun Otentik</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAB 01: TENTANG SAYA -->
+<section class="w-full py-20 bg-surface-container-low scroll-mt-24" id="tentang">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<!-- Section Header with Scrapbook Indicator -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-12">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 01</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Manifesto &amp; Catatan Diri</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+            Siapa di Balik Lembaran Ini?
+          </h2>
+</div>
+<p class="font-journal-note text-journal-note italic text-secondary max-w-xs">
+          "Setiap lembar adalah cermin dari apa yang kita perhatikan dan kita rawat dengan sungguh-sungguh."
+        </p>
+</div>
+<!-- Content Grid: Bio Sheet & Sticky Memo Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Long Narrative Journal Page (Left) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 lg:p-10 rounded-xl shadow-md flex flex-col gap-6">
+<div class="flex items-center justify-between pb-4">
+<span class="font-headline-sm text-headline-sm text-primary">Fragmen &amp; Sudut Pandang</span>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="font-journal-stamp text-journal-stamp uppercase">Catatan Lepas</span>
+</div>
+</div>
+<div class="flex flex-col gap-4 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>
+              Saya adalah seorang perancang dan penjelajah visual yang percaya bahwa kesederhanaan memiliki suara paling jujur. Ketertarikan saya pada dunia desain berakar dari kegemaran mengamati bagaimana detail kecil dalam kehidupan sehari-hari — secangkir teh di meja kayu lapuk, layout pamflet jadul, atau heningnya jalanan sehabis hujan — dapat memicu rasa keterikatan yang mendalam.
+            </p>
+<p>
+              Dalam keseharian profesional, saya berfokus pada <span class="text-primary font-medium bg-secondary-container/50 px-1 py-0.5 rounded">desain pengalaman digital (UI/UX), penceritaan editorial, dan arsitektur informasi intuitif</span>. Bagi saya, perangkat digital seharusnya tidak terasa dingin dan mekanis; teknologi terbaik justru yang mampu mengadopsi kehangatan sentuhan manusia.
+            </p>
+<p>
+              Ketika sedang tidak berada di depan layar komputer, Anda kemungkinan besar akan menemukan saya sedang menjelajahi toko buku loak, menyeduh biji kopi lokal dengan metode pour-over, mengabadikan sudut kota lewat kamera analog 35mm, atau sekadar menulis pemikiran acak di buku saku bersampul kain.
+            </p>
+</div>
+<!-- Highlight Quote Box -->
+<div class="bg-surface-container p-5 rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-[28px] mt-0.5">format_quote</span>
+<div class="flex flex-col gap-1">
+<p class="font-headline-sm text-headline-sm text-primary italic leading-snug">
+                "Karya yang bermakna lahir ketika rasa empati dipadukan dengan ketelitian yang sabar."
+              </p>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary tracking-widest mt-1">— Prinsip Berkarya [Nama Lengkap]</span>
+</div>
+</div>
+</div>
+<!-- Sticky Scrapbook Sticky Memo & Details Card (Right) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Pinned Memo Note -->
+<div class="relative bg-secondary-fixed/60 p-6 sm:p-8 rounded-xl shadow-md transform lg:rotate-1">
+<!-- Simulated Pin Top Center -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-secondary shadow-md flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-surface"></div>
+</div>
+<div class="flex items-center justify-between pb-4">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-on-secondary-fixed-variant">Biodata Singkat</span>
+<span class="material-symbols-outlined text-on-secondary-fixed-variant text-[18px]">push_pin</span>
+</div>
+<div class="flex flex-col gap-4 font-body-md text-body-md text-on-secondary-fixed">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-fixed-variant font-semibold">Nama Lengkap</span>
+<span class="font-title-md text-title-md text-primary font-bold">[Nama Lengkap]</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-fixed-variant font-semibold">Domisili &amp; Lokasi</span>
+<span class="text-on-secondary-fixed font-medium">[Jakarta Selatan / Indonesia • Terbuka untuk Remote]</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-fixed-variant font-semibold">Status / Peran Saat Ini</span>
+<span class="text-on-secondary-fixed font-medium">[Desainer UI/UX • Kreator Konten Editorial]</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-fixed-variant font-semibold">Minat &amp; Kegemaran</span>
+<div class="flex flex-wrap gap-1.5 mt-1.5">
+<span class="px-2.5 py-1 bg-surface rounded text-primary font-label-sm text-label-sm shadow-xs">Fotografi Film</span>
+<span class="px-2.5 py-1 bg-surface rounded text-primary font-label-sm text-label-sm shadow-xs">Desain Editorial</span>
+<span class="px-2.5 py-1 bg-surface rounded text-primary font-label-sm text-label-sm shadow-xs">Jurnalistik Santai</span>
+<span class="px-2.5 py-1 bg-surface rounded text-primary font-label-sm text-label-sm shadow-xs">Seduhan Kopi V60</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Candid Snapshot Print -->
+<div class="bg-surface-container-lowest p-3 pb-8 rounded-xl shadow-md transform -rotate-1 hover:rotate-0 transition-transform">
+<div class="w-full aspect-[16/10] rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Warm aesthetic candid shot of an organized desk workspace filled with vintage notebooks, wooden pencils, mechanical keyboard, small potted succulent, and warm desk lamp illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdqQ978zVoqWiRu_cHiBT4Z4JgvyedSMLMYOn3WvRVNF_de90WYrXTznwqt_hVVvNKARElih3zhg41JWTvKjwysPah_wJ0drSeQOt0xNt-S8BEiW4tsAWLQ6r8_GPNuNTpQIJUL9J3JhqcSRmXzeH660MLuvbNmchyHAPlhQGH1tUBFjGMTP_sn8d3wrfWXEPXZOBwRTMkoXEJ-otXCCKbc0KJpVYEA_vY3I5_b7Y"/>
+</div>
+<div class="mt-3 px-1 flex items-center justify-between">
+<span class="font-journal-note text-journal-note italic text-primary">Sudut Meja Kerja Harian</span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary">Foto Arsip #02</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAB 02: PERJALANAN PENDIDIKAN (Stitched Timeline) -->
+<section class="w-full py-20 bg-surface scroll-mt-24" id="perjalanan"><span id="pendidikan" class="relative -top-24"></span>
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<!-- Section Title -->
+<div class="flex flex-col gap-2 pb-14 max-w-xl">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 02</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Jejak Akademik</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+          Perjalanan Pendidikan
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pondasi pemikiran dan laboratorium tempat saya belajar mengasah nalar kritis, kepekaan artistik, dan metodologi riset.
+        </p>
+</div>
+<!-- Organic Stitched Timeline Container -->
+<div class="relative pl-6 sm:pl-10 space-y-12">
+<!-- Vertical Thread / Stitched Guide Line -->
+<div class="absolute left-2.5 sm:left-4 top-2 bottom-4 w-0.5 bg-outline-variant/60"></div>
+<!-- Milestone 1 -->
+<div class="relative flex flex-col md:flex-row md:items-start gap-6 group">
+<!-- Wooden/Brass Bead Node -->
+<div class="absolute -left-6 sm:-left-10 top-1 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shadow-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest bg-secondary-container px-2.5 py-1 rounded text-on-secondary-container font-bold">
+                2020 — 2024
+              </span>
+<span class="font-journal-note text-journal-note italic text-secondary">Sarjana (S1)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1">
+              [Nama Institusi / Universitas Indonesia]
+            </h3>
+<p class="font-label-lg text-label-lg text-secondary font-medium">
+              [Program Studi / Desain Komunikasi Visual &amp; Sistem Informasi]
+            </p>
+<div class="mt-4 p-4 bg-surface-container-low rounded-lg">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Fokus riset tugas akhir pada integrasi tipografi digital terakses, arsitektur tata kelola informasi mikro, serta eksperimen antarmuka inklusif. Lulus dengan predikat <em>Cum Laude / Sangat Memuaskan</em>.
+              </p>
+</div>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative flex flex-col md:flex-row md:items-start gap-6 group">
+<div class="absolute -left-6 sm:-left-10 top-1 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shadow-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest bg-tertiary-fixed text-on-tertiary-fixed-variant px-2.5 py-1 rounded font-bold">
+                2023
+              </span>
+<span class="font-journal-note text-journal-note italic text-secondary">Sertifikasi Profesional</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1">
+              [Program Studi Independen / Google UI/UX Professional Certificate]
+            </h3>
+<p class="font-label-lg text-label-lg text-secondary font-medium">
+              Coursera &amp; Google Career Certificates
+            </p>
+<div class="mt-4 p-4 bg-surface-container-low rounded-lg">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Eksplorasi mendalam perancangan solusi berpusat pada manusia (Human-Centered Design), pembuatan prototipe interaktif fidelitas tinggi, usability testing terstruktur, serta audit aksesibilitas WCAG.
+              </p>
+</div>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative flex flex-col md:flex-row md:items-start gap-6 group">
+<div class="absolute -left-6 sm:-left-10 top-1 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shadow-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest bg-surface-container-highest px-2.5 py-1 rounded text-primary font-bold">
+                2017 — 2020
+              </span>
+<span class="font-journal-note text-journal-note italic text-secondary">Pendidikan Menengah Atas</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1">
+              [Sekolah Menengah / SMA Negeri Unggulan]
+            </h3>
+<p class="font-label-lg text-label-lg text-secondary font-medium">
+              Jurusan Peminatan MIPA &amp; Bahasa
+            </p>
+<div class="mt-4 p-4 bg-surface-container-low rounded-lg">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Tempat pertama kali mencintai dunia pembuatan majalah dinding, kompetisi esai sastra, serta sketsa kartun ilustrasi. Aktif sebagai koordinator visual klub penerbitan siswa.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAB 03: KEAHLIAN (Hal yang Saya Pelajari / Paper Cut Tags) -->
+<section class="w-full py-20 bg-surface-container-high scroll-mt-24" id="keahlian">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<!-- Section Heading -->
+<div class="flex flex-col items-center text-center gap-3 pb-14 max-w-xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 03</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Kotak Perkakas &amp; Kemampuan</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+          Hal yang Saya Pelajari &amp; Asah
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Potongan keterampilan yang dikumpulkan sepanjang proses berkarya, mulai dari perkakas digital hingga pendekatan empati manusiawi.
+        </p>
+</div>
+<!-- Grid of Kraft / Paper Cut Badge Containers -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1: Bahasa & Markup -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 pb-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">code</span>
+<span class="font-title-md text-title-md text-primary">Bahasa &amp; Markup</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">HTML5 Semantic</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">CSS3 / Tailwind</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">JavaScript Modern</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Python Dasar</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Markdown Specs</span>
+</div>
+</div>
+<!-- Category 2: Framework & Tools -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 pb-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">design_services</span>
+<span class="font-title-md text-title-md text-primary">Aplikasi &amp; Alat</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-secondary-container/60 rounded font-label-sm text-label-sm text-on-secondary-container font-medium shadow-xs">Figma &amp; FigJam</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Adobe InDesign</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Lightroom Classic</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Notion OS</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">React Dasar</span>
+</div>
+</div>
+<!-- Category 3: Riset & Alur Kerja -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 pb-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">psychology</span>
+<span class="font-title-md text-title-md text-primary">Riset &amp; Manajemen</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">User Interviews</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Wireframing</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Design Systems</span>
+<span class="px-3 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded font-label-sm text-label-sm font-medium shadow-xs">Copywriting</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Usability Audit</span>
+</div>
+</div>
+<!-- Category 4: Nilai & Karakter -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 pb-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">spa</span>
+<span class="font-title-md text-title-md text-primary">Nilai &amp; Jiwa Rasa</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Empati Mendalam</span>
+<span class="px-3 py-1.5 bg-secondary-container/60 rounded font-label-sm text-label-sm text-on-secondary-container font-medium shadow-xs">Storytelling Visual</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Dokumentasi Rapi</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Keterbukaan Kritik</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-sm text-label-sm text-primary font-medium shadow-xs">Kolaborasi Hangat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAB 04: PENGALAMAN (Potongan Perjalanan) -->
+<section class="w-full py-20 bg-surface scroll-mt-24" id="pengalaman">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-12">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 04</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Ruang Kerja &amp; Kontribusi</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+            Potongan Perjalanan Profesional
+          </h2>
+</div>
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">
+          3 Posisi Terakhir
+        </span>
+</div>
+<!-- Experience Cards Grid (Editorial Paper Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Role 1: Current -->
+<div class="relative bg-surface-container-low p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-journal-stamp text-journal-stamp uppercase px-2.5 py-1 bg-primary text-on-primary rounded font-bold">
+                2023 — Sekarang
+              </span>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug">
+                UI/UX &amp; Content Designer
+              </h3>
+<p class="font-label-lg text-label-lg text-secondary font-medium">
+                [Nama Instansi / Studio Desain Naratif]
+              </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Memimpin perancangan identitas interaksi web untuk klien berskala publik dan kultural. Mengembangkan sistem desain terpadu, menyelaraskan mikroteks editorial dengan ritme visual, serta melakukan uji fungsi pengguna secara berkala.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Peran Penuh Waktu</span>
+<span class="font-medium text-secondary">Studio Kreatif</span>
+</div>
+</div>
+<!-- Role 2: Student Press -->
+<div class="relative bg-surface-container-low p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-journal-stamp text-journal-stamp uppercase px-2.5 py-1 bg-surface-container-highest text-primary rounded font-bold">
+                2022 — 2023
+              </span>
+<span class="material-symbols-outlined text-secondary text-[20px]">newspaper</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug">
+                Pemimpin Redaksi &amp; Kreatif
+              </h3>
+<p class="font-label-lg text-label-lg text-secondary font-medium">
+                [Nama Organisasi / Lembaga Pers Mahasiswa]
+              </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Mengorkestrasi peredaran 4 edisi majalah cetak dan portal liputan daring. Membina tim redaksi beranggotakan 20 orang penulis dan fotografer dokumenter dalam menghasilkan arsip investigasi independen yang bernas.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Kepemimpinan</span>
+<span class="font-medium text-secondary">Media Cetak &amp; Daring</span>
+</div>
+</div>
+<!-- Role 3: Agency Intern -->
+<div class="relative bg-surface-container-low p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-journal-stamp text-journal-stamp uppercase px-2.5 py-1 bg-surface-container-highest text-primary rounded font-bold">
+                2022
+              </span>
+<span class="material-symbols-outlined text-secondary text-[20px]">brush</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug">
+                Junior Visual Designer
+              </h3>
+<p class="font-label-lg text-label-lg text-secondary font-medium">
+                [Magang / Creative Agency Nusantara]
+              </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Berperan dalam perancangan materi kampanye kesadaran sosial, aset media sosial dinamis, serta eksplorasi sketsa vektor. Mengasimilasi alur kerja cepat tim produksi lintas divisi dalam lingkungan agensi dinamis.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Program Magang</span>
+<span class="font-medium text-secondary">Agensi Komunikasi</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAB 05: PORTFOLIO (Karya dan Hal yang Pernah Saya Buat) -->
+<section class="w-full py-20 bg-surface-container-low scroll-mt-24" id="portfolio">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-14">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 05</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Artefak Pilihan</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+            Karya &amp; Hal yang Pernah Saya Buat
+          </h2>
+</div>
+<p class="font-journal-note text-journal-note italic text-secondary max-w-sm">
+          "Setiap proyek membawa tantangan unik dan cerita di baliknya."
+        </p>
+</div>
+<!-- Asymmetrical Scrapbook Portfolio Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Project 1 (Large Featured Card - 7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-5 pb-8 shadow-md flex flex-col gap-5">
+<div class="w-full aspect-[16/10] rounded-lg bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="An elegant, modern editorial website interface displayed on a laptop screen with cream background, warm brown typography, and minimalist layout showcasing digital archives and community stories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBntUbpU-a23wy2uMvYBYoFZ-hQ4s3YA4hb-XgO1gMaup8jdBW7CzCWg0DR3T7V7-ck-KGvyzjPEj6PGKzb-e_1voYdHlxR-bosIdS_mQipyVZE8VJzS8rj4JW4WoZE0oP0zs7VGHpRIa7vjw0QGZTukVmytVlGdU0UTukVYw5Pe7GjYRfRQ4MhMYjQDTKHWlrZKRPcb_3d7hbdMUh4wbMKguExt-4dXxWZnvLeWhQ"/>
+<div class="absolute top-3 left-3 px-3 py-1 bg-surface-container-lowest/90 backdrop-blur-xs rounded font-journal-stamp text-journal-stamp uppercase text-primary">
+              Karya Utama • 2024
+            </div>
+</div>
+<div class="flex flex-col gap-3 px-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Web Design</span>
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Editorial Layout</span>
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Tailwind CSS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">
+              [Nama Proyek 1] — Arsip Digital &amp; Jurnal Komunitas
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Platform publikasi digital yang mendokumentasikan memori kolektif warga kota melalui cerita foto, narasi lisan, dan tata tipografi terstruktur yang responsif di segala perangkat genggam.
+            </p>
+<div class="pt-2 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-secondary font-semibold group" href="#">
+<span>Pelajari Dokumentasi Lengkap</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase">Studi Kasus 01</span>
+</div>
+</div>
+</div>
+<!-- Project 2 (Polaroid Style Stack - 5 Columns) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-5 pb-8 shadow-md flex flex-col gap-5 transform lg:rotate-1 hover:rotate-0 transition-transform">
+<div class="w-full aspect-[4/3] rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A clean mobile app design mockup featuring a children visual learning interface with soft terracotta, olive green, and beige color scheme with playful minimalist illustrations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEKdPN_KJw5GNmsDRlA84MJ_MWS9yTZ9f7M5TUtyiKK75taTN58YrRbKOBXEvBpkkie5nOgeTUPjKkgWhHr7BKcrXZZfLNmfmZMUIJfkQIlX6p2rvWH5F1F9G1j0O5SeCpKZ07hnviDV2pq3UvZch8gQwYWpiA_iFlhW4z8N_D22X7XdXBW8RRX_ax1EHAN9I2GHJEZ19DZ68iIR-fRXdnnpnJR1qYtbRh7Olax-0"/>
+</div>
+<div class="flex flex-col gap-3 px-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Mobile UI/UX</span>
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Design System</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+              [Nama Proyek 2] — Aplikasi Pembelajaran Visual Anak
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Desain antarmuka aplikasi seluler untuk anak usia dini yang menitikberatkan pada kesederhanaan navigasi dan interaksi sentuhan yang aman.
+            </p>
+<div class="pt-2 flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-secondary font-semibold" href="#">
+<span>Lihat Desain</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase">2023</span>
+</div>
+</div>
+</div>
+<!-- Project 3 (5 Columns) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-5 pb-8 shadow-md flex flex-col gap-5 transform lg:-rotate-1 hover:rotate-0 transition-transform">
+<div class="w-full aspect-[4/3] rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Rustic coffee bag packaging design and cup mockup on wooden table, handcrafted logo stamp, craft brown paper textures, artisanal aesthetic with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB55Bd0mAHDgpmLW3ID_5kqxKG-PxmXJHXUCOs_hVOCJ0HmiaOoQbNQtFfllh9W7XhlsFqhJgM8xSlMPjMDujBxGjtAqiZTTa6O8GKIUVG2j6KRzHWd3E0ZWuqhiXIZd41gJ4kD41BEVnCeVzILJp4dpSFfCvn1lG09BBXcDF4a-7w0MlW92i1umoUUIuNOi9lhnBtaMtx-WvMjyBW1f0P8wTN2FCF3l7zVJLSNGxQ"/>
+</div>
+<div class="flex flex-col gap-3 px-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Branding &amp; Identity</span>
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Kemasan Kraft</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+              [Nama Proyek 3] — Identitas Visual Kedai Kopi Lokal
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Perancangan identitas merek menyeluruh untuk sangrai kopi lokal, mencakup tipografi logo stempel, kemasan kantong kertas, dan kartu menu saku.
+            </p>
+<div class="pt-2 flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-secondary font-semibold" href="#">
+<span>Lihat Panduan Merek</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase">2023</span>
+</div>
+</div>
+</div>
+<!-- Project 4 (7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-5 pb-8 shadow-md flex flex-col gap-5">
+<div class="w-full aspect-[16/10] rounded-lg bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Exhibition catalog book open on a concrete bench surrounded by framed street photography prints hanging on gallery walls with soft gallery spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlMH02-tQK_5tIN_CZO4Al8dnPzLNpOwSUwSzpi3mR7OfNAKY6ynXaOe7-5pKfu49l9D325bK6bR74Gw-oYqXmoaUrOy7sztYIgH-xGBelO52QZXTHK0K91Py5L2VI1zNjT8d80AmG-E6QmY_VWGzmaclNww4qjnGgBtE8P_4bSCcqcTWfYG2D6DN0OL3rFGb_UPiqsljgmqwwY4cdRDz7p82UjwF4fjtMmd8r2M"/>
+<div class="absolute top-3 left-3 px-3 py-1 bg-surface-container-lowest/90 backdrop-blur-xs rounded font-journal-stamp text-journal-stamp uppercase text-primary">
+              Dokumentasi Publikasi • 2022
+            </div>
+</div>
+<div class="flex flex-col gap-3 px-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Exhibition Design</span>
+<span class="px-2.5 py-1 bg-surface-container-high rounded font-label-sm text-label-sm text-secondary font-medium">Katalog Cetak</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">
+              [Nama Proyek 4] — Pameran Dokumentasi Fotografi Jalanan
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Penyusunan tata letak buku pameran foto 64 halaman serta tata letak spasial kuratorial untuk pameran independen bertajuk dinamika sudut Jakarta.
+            </p>
+<div class="pt-2 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-secondary font-semibold group" href="#">
+<span>Lihat Dokumentasi Pameran</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<span class="font-journal-stamp text-journal-stamp text-secondary uppercase">Studi Kasus 04</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BAB 06: BLOG / CATATAN PERSONAL (Catatan Kecil Saya) -->
+<section class="w-full py-20 bg-surface scroll-mt-24" id="tulisan">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-14">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 06</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Esai &amp; Pikiran Lepas</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+            Catatan Kecil Saya
+          </h2>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-secondary hover:text-primary font-semibold" href="#">
+<span>Arsip Seluruh Tulisan</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Diary / Journal Articles List (Open Notebook feel) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-wider text-secondary bg-surface-container px-2 py-0.5 rounded">
+                Refleksi
+              </span>
+<span class="font-journal-note text-journal-note italic text-secondary">
+                12 Mei 2024
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug hover:text-secondary transition-colors cursor-pointer">
+              Tentang Melambat dan Menemukan Ritme dalam Berkarya
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Di tengah dorongan konstan untuk selalu menghasilkan karya dengan cepat, ada kekuatan tak terduga ketika kita berani melangkah pelan dan memberi ruang pada gagasan untuk berfermentasi secara alami.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<a class="font-label-lg text-label-lg text-primary font-semibold hover:text-secondary inline-flex items-center gap-1" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 mnt baca</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-wider text-secondary bg-surface-container px-2 py-0.5 rounded">
+                Esai Desain
+              </span>
+<span class="font-journal-note text-journal-note italic text-secondary">
+                20 April 2024
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug hover:text-secondary transition-colors cursor-pointer">
+              Mengapa Tipografi Analog Tetap Relevan di Era Antarmuka Digital
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Buku cetak tua dan papan tanda jalanan mengajarkan proporsi dan ruang bernapas yang sering kali terabaikan dalam estetika antarmuka modern yang serba kaku.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<a class="font-label-lg text-label-lg text-primary font-semibold hover:text-secondary inline-flex items-center gap-1" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 mnt baca</span>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-wider text-secondary bg-surface-container px-2 py-0.5 rounded">
+                Catatan Harian
+              </span>
+<span class="font-journal-note text-journal-note italic text-secondary">
+                5 Maret 2024
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug hover:text-secondary transition-colors cursor-pointer">
+              Catatan dari Sudut Kedai Kopi: Seni Menghargai Proses Sketsa
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Garis yang tidak lurus dan coretan yang salah bukanlah kegagalan, melainkan jembatan yang jujur menuju bentuk akhir yang tak terduga.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<a class="font-label-lg text-label-lg text-primary font-semibold hover:text-secondary inline-flex items-center gap-1" href="#">
+<span>Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 mnt baca</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- BAB 07: GALERI KENANGAN (Potongan Kenangan & Klip Polaroid) -->
+<section class="w-full py-20 bg-surface-container-high overflow-hidden scroll-mt-24" id="galeri">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center gap-2 pb-14 max-w-lg mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 07</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Klip Polaroid &amp; Fragmen Momen</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+          Potongan Kenangan
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Kilas balik momen candid, perjalanan kecil, dan sudut sunyi yang sempat tertangkap oleh lensa kamera.
+        </p>
+</div>
+<!-- Scrapbook Collage Mosaic -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+<!-- Polaroid 1 -->
+<div class="bg-surface-container-lowest p-3 pb-8 rounded-lg shadow-md transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+<div class="w-full aspect-square rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Film photo of an afternoon walk in a lush quiet botanical garden pathway, gentle dappled sunlight through green leaves, warm cozy atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIHcgoBUw6wtQC16_FblU9IqNwJ2ZoJevXLDp-JYq0BMK6UMEH3DRUx11gZWYRq0jgaK_CLJthTjcvSvLGI8UeqZJG8PxN1hAIvLbptBekiBJIaR8lHPhWUaEDZTlfw1iTpgH31KWyPAumigyD43D4SHgSQhBFisWm_0K6V7IEqpypwimOeEpnqZi8ATwtdNvDb9XFoBSem3BHj33CN6lNOUZj_gd2ch2qt6lWvfw"/>
+</div>
+<div class="mt-3 px-1 flex flex-col">
+<span class="font-journal-note text-journal-note italic text-primary leading-tight">Jalan Sore di Kebun Raya</span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary mt-1">Bogor • Juni 2024</span>
+</div>
+</div>
+<!-- Polaroid 2 (Elevated Washi Tape) -->
+<div class="relative bg-surface-container-lowest p-3 pb-8 rounded-lg shadow-md transform rotate-2 hover:rotate-0 transition-transform duration-300">
+<!-- Washi tape at top -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-secondary-fixed/80 rounded-sm shadow-xs rotate-1"></div>
+<div class="w-full aspect-square rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up film camera detail of an artist sketching organic floral patterns in a textured paper notebook with sepia ink pens and watercolor swatches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD8crNKgUAC6q2OtXKXRZjfozcxb73UlEzDQJ4yErLUPs3ZzQfurEESdDt8Z7B0D_VquMxncQDKVbG_JWCV3mO6zNkTioT-eYML6HA8V_yW13Ko_MGHinDMDNhc_p15MxDlvu3qKWvMhJqmE2uRx7P6nDMWYQMOvIPoHvhXlgT65im5cr2LNZzLrEjugGJnIKIH4pxqmrakFel6DDGW_tmusskDeItyfrMe2Y2TcU"/>
+</div>
+<div class="mt-3 px-1 flex flex-col">
+<span class="font-journal-note text-journal-note italic text-primary leading-tight">Eksplorasi Sketsa Tinta</span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary mt-1">Studio • April 2024</span>
+</div>
+</div>
+<!-- Polaroid 3 -->
+<div class="bg-surface-container-lowest p-3 pb-8 rounded-lg shadow-md transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="w-full aspect-square rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Warm aesthetic shot of friends sitting together at an outdoor rustic wooden bench cafe laughing with drinks and notebooks on the table during golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAreQiIPnqKXt9PPP5gedf9Fq6ZN7Y1xJA9Y1WAsF3fL4cjVVNgTO5ftya-ApEDM1lK3avwesG95_9S1wt5aJLrfKFkymxYeJdZ-W2b7JhSoAcpCZ2s1bH5tCcrVW85Q2eIIsFd3z4dyAplk83RjrFvjRQsQopzOP9loPLM8WyG3E752omq-8Uee1XHt3UIp_PEQfmKe-89CfayMA6VtSHBqI9R9IZV5KHiCfrbdc8"/>
+</div>
+<div class="mt-3 px-1 flex flex-col">
+<span class="font-journal-note text-journal-note italic text-primary leading-tight">Diskusi Lepas Senja</span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary mt-1">Teman Baik • Feb 2024</span>
+</div>
+</div>
+<!-- Polaroid 4 -->
+<div class="relative bg-surface-container-lowest p-3 pb-8 rounded-lg shadow-md transform rotate-3 hover:rotate-0 transition-transform duration-300">
+<div class="w-full aspect-square rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A vintage 35mm rangefinder camera resting on an open linen map next to a ceramic cup of black coffee on weathered wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT9lYO10ePUrb0FaUjzH1jlhCTHMuEGIa7Ld1oshNixX57ZKYGhhCnYRuemRzWZ0P3Q94bxhS-gx96-Btrso1hEzccZioXZHX9mnTKbx3YdHmt2xmpEU6n5PqF5rlEJg5xlIgvZpxewI9ks_FOUmx-og4ygpxoeyZwQ3mCHoQZGDy_Kq8KRK-kasv_nBfzjbsPBmKqhUSzHd7gtP5pAUUe1IBLp6poI0ugyfnEOTo"/>
+</div>
+<div class="mt-3 px-1 flex flex-col">
+<span class="font-journal-note text-journal-note italic text-primary leading-tight">Kamera Tua &amp; Peta Usang</span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary mt-1">Yogyakarta • Jan 2024</span>
+</div>
+</div>
+</div>
+<!-- Footnote of the Gallery -->
+<div class="text-center mt-12">
+<span class="inline-flex items-center gap-2 px-4 py-1.5 bg-surface-container rounded-full font-journal-note text-journal-note italic text-secondary">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+          Semua foto diambil menggunakan kamera film 35mm &amp; kamera saku digital harian.
+        </span>
+</div>
+</div>
+</section>
+<!-- BAB 08: KONTAK (Mari Terhubung / Kotak Surat & Amplop Jurnal) -->
+<section class="w-full py-20 bg-surface scroll-mt-24" id="kontak">
+<div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin">
+<div class="bg-surface-container-lowest rounded-2xl p-8 sm:p-12 lg:p-16 shadow-lg relative overflow-hidden">
+<!-- Subtle paper stamp accent watermark -->
+<div class="absolute -bottom-8 -right-8 w-48 h-48 rounded-full bg-surface-container-high/40 pointer-events-none -z-0"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Friendly Invitation & Direct Info -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Bab 08</span>
+<span class="w-6 h-[1px] bg-outline-variant"></span>
+<span class="font-journal-note text-journal-note italic text-secondary">Kotak Surat Jurnal</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-3xl lg:text-headline-lg text-primary">
+              Mari Terhubung &amp; Berbagi Cerita
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Pintu selalu terbuka untuk obrolan santai, kolaborasi kreatif yang bermakna, proyek desain baru, atau sekadar bertukar rekomendasi buku bacaan dan album musik favorit.
+            </p>
+<div class="flex flex-col gap-4 pt-2">
+<!-- Email Card -->
+<div class="flex items-center gap-3.5 p-3.5 bg-surface-container-low rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary">Surat Elektronik</span>
+<a class="font-title-md text-title-md text-primary font-bold hover:text-secondary transition-colors" href="mailto:halo.cerita@domain.com">
+                    [Email / halo.cerita@domain.com]
+                  </a>
+</div>
+</div>
+<!-- Location Card -->
+<div class="flex items-center gap-3.5 p-3.5 bg-surface-container-low rounded-xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">place</span>
+</div>
+<div class="flex flex-col">
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary">Zona Waktu &amp; Lokasi</span>
+<span class="font-body-md text-body-md text-primary font-medium">
+                    Jakarta, Indonesia (WIB / GMT+7)
+                  </span>
+</div>
+</div>
+</div>
+<!-- Social Links Pill Badges -->
+<div class="pt-2 flex flex-col gap-2">
+<span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">
+                Kanal Jejaring Sosial
+              </span>
+<div class="flex flex-wrap gap-2">
+<a class="px-3 py-1.5 bg-surface-container rounded-lg font-label-lg text-label-lg text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all inline-flex items-center gap-1.5 shadow-xs" href="#">
+<span>Instagram</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="px-3 py-1.5 bg-surface-container rounded-lg font-label-lg text-label-lg text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all inline-flex items-center gap-1.5 shadow-xs" href="#">
+<span>LinkedIn</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="px-3 py-1.5 bg-surface-container rounded-lg font-label-lg text-label-lg text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all inline-flex items-center gap-1.5 shadow-xs" href="#">
+<span>GitHub</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="px-3 py-1.5 bg-surface-container rounded-lg font-label-lg text-label-lg text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all inline-flex items-center gap-1.5 shadow-xs" href="#">
+<span>Spotify</span>
+<span class="material-symbols-outlined text-[14px]">headphones</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Friendly Letterform -->
+<div class="lg:col-span-7 bg-surface-container-low p-6 sm:p-8 rounded-xl shadow-inner">
+<form class="flex flex-col gap-5" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.reset();">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<span class="font-headline-sm text-headline-sm text-primary">Tulis Sepucuk Pesan</span>
+<span class="font-journal-stamp text-journal-stamp uppercase text-secondary">Lembar Balasan</span>
+</div>
+<!-- Input Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-journal-note text-journal-note italic text-primary" for="nama">
+                  Siapa nama atau sapaan akrab Anda? *
+                </label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-primary font-body-md text-body-md placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-xs" id="nama" placeholder="Tuliskan nama Anda di sini..." required="" type="text"/>
+</div>
+<!-- Input Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-journal-note text-journal-note italic text-primary" for="surel">
+                  Alamat email untuk menerima balasan saya *
+                </label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-primary font-body-md text-body-md placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-xs" id="surel" placeholder="contoh: kawan@domain.com" required="" type="email"/>
+</div>
+<!-- Subject / Topic Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-journal-note text-journal-note italic text-primary" for="topik">
+                  Mengenai apa kita akan bercakap-cakap?
+                </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-primary font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-xs" id="topik">
+<option value="kolaborasi">Ajakan Kolaborasi &amp; Proyek Desain</option>
+<option value="sapaan">Sekadar Menyapa &amp; Berbagi Cerita</option>
+<option value="rekomendasi">Rekomendasi Bacaan / Musik / Kopi</option>
+<option value="lainnya">Pertanyaan Lainnya</option>
+</select>
+</div>
+<!-- Textarea -->
+<div class="flex flex-col gap-1.5">
+<label class="font-journal-note text-journal-note italic text-primary" for="pesan">
+                  Untaian kata atau pesan yang ingin Anda sampaikan *
+                </label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-primary font-body-md text-body-md placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-xs" id="pesan" placeholder="Tuangkan pesan, ide, atau pertanyaan Anda dengan leluasa..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-secondary hover:-translate-y-0.5 transition-all cursor-pointer" type="submit">
+<span>Kirim Surat Ini</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<span class="font-journal-stamp text-journal-stamp uppercase text-on-surface-variant text-center sm:text-right">
+                  Dibalas dalam 1-2 hari kerja
+                </span>
+</div>
+<!-- Success Notification Flash -->
+<div class="hidden p-4 bg-secondary-container text-on-secondary-container rounded-lg flex items-center gap-3" id="formSuccess">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+<span class="font-body-md text-body-md">
+                  Terima kasih! Pesan Anda telah tersimpan rapi di kotak surat saya. Saya akan segera membalasnya.
+                </span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-4px_24px_rgba(73,60,50,0.03)]"><div class="h-[1px] w-full bg-outline-variant/30"></div><div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-start pb-space-lg"><div class="md:col-span-6 flex flex-col gap-space-xs"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Catatan Kaki</span></div><p class="font-headline-md text-headline-md text-primary italic max-w-md">"Terima kasih sudah berkunjung ke ruang cerita saya."</p><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Sebuah arsip lembar lepas mengenai perjalanan, artefak karya, pemikiran sunyi, dan momen-momen yang dirajut dengan tangan terbuka.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Penjelajahan</span><nav class="flex flex-col gap-1.5 font-label-lg text-label-lg text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="beranda" href="#beranda">Beranda Utama</a><a class="hover:text-primary transition-colors" data-path="tentang-saya" href="#tentang">Tentang Pembuat</a><a class="hover:text-primary transition-colors" data-path="perjalanan" href="#perjalanan">Jejak &amp; Perjalanan</a><a class="hover:text-primary transition-colors" data-path="portfolio" href="#portfolio">Portofolio Pilihan</a><a class="hover:text-primary transition-colors" data-path="tulisan" href="#tulisan">Kumpulan Catatan</a><a class="hover:text-primary transition-colors" data-path="galeri" href="#galeri">Klip Polaroid &amp; Foto</a></nav></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-journal-stamp text-journal-stamp uppercase tracking-widest text-secondary">Kanal Terhubung</span><div class="flex flex-col gap-1.5 font-label-lg text-label-lg text-on-surface-variant"><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5" href="#"><span>Instagram Journal</span><span class="material-symbols-outlined text-[14px]">north_east</span></a><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5" href="#"><span>LinkedIn Profil</span><span class="material-symbols-outlined text-[14px]">north_east</span></a><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5" href="#"><span>Repositori GitHub</span><span class="material-symbols-outlined text-[14px]">north_east</span></a><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5" href="#"><span>Surat Elektronik</span><span class="material-symbols-outlined text-[14px]">mail</span></a><a class="hover:text-primary transition-colors inline-flex items-center gap-1.5" href="#"><span>Spotify Playlist Jurnal</span><span class="material-symbols-outlined text-[14px]">headphones</span></a></div></div></div><div class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="font-medium text-primary">[Nama Lengkap]</span><span>—</span><span>Pinify Personal Journal &amp; Scrapbook Template</span></div><div class="text-center sm:text-right">© 2025 Ruang Cerita. Seluruh catatan, memori, dan ilustrasi tersimpan dengan hormat.</div></div></div></footer><script>
+  // Personal Journal Navigation & Responsiveness System
+  document.addEventListener('DOMContentLoaded', function () {
+    const desktopLinks = document.querySelectorAll('.nav-journal-link');
+    const mobileLinks = document.querySelectorAll('.mobile-journal-link');
+    const mobileCta = document.querySelector('.mobile-journal-cta');
+    const mobileMenuBtn = document.getElementById('journal-mobile-menu-btn');
+    const mobileMenu = document.getElementById('journal-mobile-menu');
+    const sections = document.querySelectorAll('section[id]');
+
+    // Mobile Menu Toggling
+    function openMobileMenu() {
+      if (!mobileMenu) return;
+      mobileMenu.classList.remove('hidden');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'close';
+      }
+    }
+
+    function closeMobileMenu() {
+      if (!mobileMenu) return;
+      mobileMenu.classList.add('hidden');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'menu';
+      }
+    }
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (mobileMenu && mobileMenu.classList.contains('hidden')) {
+          openMobileMenu();
+        } else {
+          closeMobileMenu();
+        }
+      });
+    }
+
+    // Close on click outside
+    document.addEventListener('click', function (e) {
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          closeMobileMenu();
+        }
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Active state highlighting (Scroll-Spy)
+    function setActiveNav(activeId) {
+      // Desktop nav links
+      desktopLinks.forEach(function (link) {
+        const href = link.getAttribute('href');
+        if (href === '#' + activeId) {
+          link.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-xs');
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container');
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-xs');
+          link.classList.add('text-on-surface-variant', 'hover:bg-surface-container');
+          link.removeAttribute('aria-current');
+        }
+      });
+
+      // Mobile nav links
+      mobileLinks.forEach(function (link) {
+        const href = link.getAttribute('href');
+        const arrow = link.querySelector('.link-active-arrow');
+        const icon = link.querySelector('.link-icon');
+
+        if (href === '#' + activeId) {
+          link.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-xs');
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container');
+          if (arrow) {
+            arrow.classList.remove('opacity-0');
+            arrow.classList.add('opacity-100');
+          }
+          if (icon) {
+            icon.classList.remove('text-secondary');
+            icon.classList.add('text-on-secondary-container');
+          }
+        } else {
+          link.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-xs');
+          link.classList.add('text-on-surface-variant', 'hover:bg-surface-container');
+          if (arrow) {
+            arrow.classList.add('opacity-0');
+            arrow.classList.remove('opacity-100');
+          }
+          if (icon) {
+            icon.classList.add('text-secondary');
+            icon.classList.remove('text-on-secondary-container');
+          }
+        }
+      });
+    }
+
+    // IntersectionObserver for Section Scroll-Spy
+    if ('IntersectionObserver' in window && sections.length > 0) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setActiveNav(entry.target.id);
+          }
+        });
+      }, { rootMargin: '-20% 0px -55% 0px', threshold: 0.1 });
+
+      sections.forEach(function (sec) {
+        observer.observe(sec);
+      });
+    }
+
+    // Smooth scroll and auto-close on link click
+    const clickableLinks = [...desktopLinks, ...mobileLinks];
+    if (mobileCta) clickableLinks.push(mobileCta);
+
+    clickableLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const targetId = href.substring(1);
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            closeMobileMenu();
+            setActiveNav(targetId);
+            const headerOffset = 80;
+            const elementPosition = targetEl.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  });
+</script>
+</body></html>
